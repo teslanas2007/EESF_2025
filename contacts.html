@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EESF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+     <header>
+        <div class="header-inner">
+            <picture>
+                <source media="(max-width: 1024px)" srcset="image/EN_Co-fundedbytheEU.png">
+    
+                <img src="image/EN_Co-fundedbytheEU_RGB_Monochrome.png" alt="Логотип" class="site-logo">
+            </picture>
+        
+            <div class="hamburger" id="hamburger" onclick="document.getElementById('nav-menu').classList.toggle('active'); this.classList.toggle('active');">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+                    
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about_the_project.html">Про проєкт</a></li>
+                    <li><a href="materials.html">Матеріали</a></li>
+                    <li><a href="partners.html">Партнери</a></li>
+                    <li><a href="news_and_events.html">Новини та події</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="lang-flags">
+                <a href="index.html"><img src="image/ukraine.png" width="24px"></a>
+                <a href="index_EN.html"><img src="image/english.png" width="24px"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="index_main">
+        <section class="contact-page-header">
+            <p class="pre-title">КОНТАКТИ</p>
+            <h1>Зв’яжіться з нами</h1>
+
+            <div class="contact-persons">
+                <div class="person-card">
+                    <p class="person-name">Тетяна Матусевич</p>
+                    <a href="mailto:t.v.matusevych@udu.edu.ua" class="person-email">t.v.matusevych@udu.edu.ua</a>
+                </div>
+            </div>
+        </section>
+
+         <div class="partners-grid">
+            <h2>Контактна інформація <br>партнерів</h2>
+            <p class="partners-note">Натисніть назву організації, щоб переглянути всі контактні дані</p>
+            <div class="partner-item" onclick="this.classList.toggle('active');">
+                <div class="partner-header">
+                    <h4>Український державний університет імені Михайла Драгоманова<br>(Національний координатор)</h4>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <div class="partner-content">
+                    <p><strong>веб-сайт:</strong> <a href="https://udu.edu.ua/en/" target="_blank">https://udu.edu.ua/en/</a></p>
+                    <p><strong>тел.:</strong> +38(044)234-11-08</p>
+                    <p><strong>Відповідальна особа:</strong><br>Тетяна МАТУСЕВИЧ, керівник міжнародних проєктів і програм</p>
+                    <p><strong>Контакти:</strong><br>тел.: +380679126296  <br>e-пошта: <a href="mailto:t.v.matusevych@udu.edu.ua">t.v.matusevych@udu.edu.ua</a></p>
+                </div>
+            </div>
+
+            <div class="partner-item" onclick="this.classList.toggle('active');">
+                <div class="partner-header">
+                    <h4>Університет Григорія Сковороди<br>в Переяславі</h4>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <div class="partner-content">
+                    <p><strong>веб-сайт:</strong> <a href="https://uhsp.edu.ua" target="_blank">https://uhsp.edu.ua</a></p>
+                    <p><strong>тел.:</strong> +38 (044) 293-11-10 </p>
+                    <p><strong>Відповідальна особа:</strong><br>Оксана КОВТУН, проректор з міжнародних зв'язків та проєктної діяльності</p>
+                    <p><strong>Контакти:</strong><br>тел.: +380730616935 <br>e-пошта: <a href="mailto:kovtunok@ukr.net">kovtunok@ukr.net</a></p>
+                </div>
+            </div>
+
+            <div class="partner-item" onclick="this.classList.toggle('active');">
+                <div class="partner-header">
+                    <h4>Національний університет «Острозька академія»</h4>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <div class="partner-content">
+                    <p><strong>веб-сайт:</strong> <a href="https://www.oa.edu.ua" target="_blank">https://www.oa.edu.ua</a></p>
+                    <p><strong>тел.:</strong> +38 (067) 879-25-26</p>
+                    <p><strong>Відповідальна особа:</strong><br>Дмитро ШЕВЧУК, проректор з науково-педагогічної роботи</p>
+                    <p><strong>Контакти:</strong><br>тел.:  +380669300489<br>e-пошта:<a href="mailto:dmytro.shevchuk@oa.edu.ua">dmytro.shevchuk@oa.edu.ua</a></p>
+                </div>
+            </div>
+
+            <div class="partner-item" onclick="this.classList.toggle('active');">
+                <div class="partner-header">
+                    <h4>Державний вищий навчальний заклад<br>«Ужгородський національний університет</h4>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <div class="partner-content">
+                    <p><strong>веб-сайт:</strong> <a href="https://www.uzhnu.edu.ua" target="_blank">https://www.uzhnu.edu.ua</a></p>
+                    <p><strong>тел.:</strong> +38 (03122) 3-33-41</p>
+                    <p><strong>Відповідальна особа:</strong><br>Ганна МЕЛЕГАНИЧ, доцент кафедри міжнародних студій та суспільних комунікацій </p>
+                    <p><strong>Контакти:</strong><br>тел.:  +380509093018<br>e-пошта: <a href="mailto:hanna.melehanych@uzhnu.edu.ua">hanna.melehanych@uzhnu.edu.ua</a></p>
+                </div>
+            </div>
+
+            <div class="partner-item" onclick="this.classList.toggle('active');">
+                <div class="partner-header">
+                    <h4>Асоціація експертів зі сталого розвитку</h4>
+                    <button class="toggle-btn">▼</button>
+                </div>
+                <div class="partner-content">
+                    <p><strong>веб-сайт:</strong> <a href="https://asde.com.ua" target="_blank">https://asde.com.ua</a></p>
+                    <p><strong>тел.:</strong>  +38 (067) 894-81-08</p>
+                    <p><strong>Відповідальна особа:</strong><br>Яна КОНЬОК, виконавча директорка</p>
+                    <p><strong>Контакти:</strong><br>тел.: +380678948108 <br>e-пошта:<a href="mailto:yana.konyok@asde.org.ua">yana.konyok@asde.org.ua</a></p>
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+
+
+     <footer class="site-footer">
+        <div class="container footer-inner">
+            
+            <div class="footer-left">
+                <h3>t.v.matusevych@udu.edu.ua</h3>
+                <p>Тетяна Матусевич</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about_the_project.html">Про проєкт</a></li>
+                    <li><a href="partners.html">Партнери</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
