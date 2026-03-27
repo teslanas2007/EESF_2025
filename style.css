@@ -431,6 +431,34 @@ nav ul li a:hover {
     color: #1b5e20;
     text-decoration: underline;
 }
+
+/* Додайте це до секції .site-footer у style.css */
+
+.footer-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Дозволяє центру займати вільний простір */
+}
+
+.footer-logo {
+    max-height: 150px; /* Обмеження висоти, щоб футер не став занадто високим */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Налаштування для мобільних пристроїв (вже є медіа-запит на 1024px) */
+@media (max-width: 1024px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: center; /* Центруємо всі елементи по вертикалі */
+        gap: 30px;
+    }
+    
+    .footer-middle {
+        order: -1; /* Опціонально: переміщує логотип на самий верх у мобільній версії */
+    }
+}
 /* ---------------------------------------------------------- сторінка без наповнення ---------------------------------------------------------- */
 .no-filling{
     height: 500px;
