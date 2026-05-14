@@ -389,6 +389,7 @@ nav ul li a:hover {
 .footer-inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap !important;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -447,6 +448,24 @@ nav ul li a:hover {
     object-fit: contain;
 }
 
+/* Новий блок для застереження (disclaimer) */
+.footer-disclaimer {
+    flex-basis: 100% !important; /* Займає всю ширину */
+    width: 100% !important;
+    margin-top: 30px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    text-align: center !important;
+}
+
+.footer-disclaimer p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #444;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Налаштування для мобільних пристроїв (вже є медіа-запит на 1024px) */
 @media (max-width: 1024px) {
     .footer-inner {
@@ -457,6 +476,10 @@ nav ul li a:hover {
     
     .footer-middle {
         order: -1; /* Опціонально: переміщує логотип на самий верх у мобільній версії */
+    }
+
+    .footer-disclaimer {
+        margin-top: 20px;
     }
 }
 /* ---------------------------------------------------------- сторінка без наповнення ---------------------------------------------------------- */
