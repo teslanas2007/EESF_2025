@@ -1,4 +1,5 @@
 /* ---------------------------------------------------------- Загальні стилі ---------------------------------------------------------- */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +10,29 @@ body {
     color: #17558C;
     min-height: 100vh;
 }
+/* ВСТАВЛЯТИ СЮДИ (НА ПОЧАТОК ФАЙЛУ) */
+
+.eu-top-disclaimer {
+    display: block !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    padding: 40px 0 !important;
+    border-bottom: 5px solid #003399 !important;
+    text-align: center !important;
+}
+
+.disclaimer-inner {
+    display: inline-block !important;
+    max-width: 1000px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    font-size: 26px !important;    /* Дуже великий шрифт для перевірки */
+    font-weight: 800 !important;   /* Жирний */
+    line-height: 1.4 !important;
+    color: #17558C !important;
+    font-family: Arial, sans-serif !important;
+} 
 
 /* Колір для всіх великих заголовків на сайті */
 h1, h2, h3, .section-title {
@@ -33,7 +57,10 @@ a {
     margin-bottom: 60px;
 }
 
+
+
 /* ---------------------------------------------------------- Шапка (Header) ---------------------------------------------------------------- */
+
 header {
     border-bottom: 1px solid #cce0ff;
     background-color: transparent; 
@@ -98,7 +125,38 @@ nav ul li a:hover {
     align-items: center;
     padding: 60px 0;
 }
+.hero-disclaimer-container {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+    clear: both; /* Скидає обтікання, якщо елементи зсунуті вбік */
+    position: relative; /* Гарантує правильне відображення в потоці документа */
+    z-index: 10;
+}
 
+/* Внутрішній блок з лініями та стилізацією тексту */
+.hero-disclaimer-inner {
+    border-top: 1px solid #ccc;    /* Лінія зверху (сіра, ненав'язлива) */
+    border-bottom: 1px solid #ccc; /* Лінія знизу */
+    padding: 15px 10px;            /* Відступи від ліній до тексту */
+}
+
+.hero-disclaimer-inner p {
+    font-size: 0.85rem;            /* Акуратний дрібний шрифт */
+    line-height: 1.5;
+    color: #555;                   /* Темно-сірий колір тексту */
+    margin: 0;
+    text-align: justify;           /* Вирівнювання по ширині */
+}
+
+/* Зміна кольору ліній на фірмовий синій колір ЄС (опціонально) */
+/* Якщо хочете сині лінії замість сірих, розкоментуйте код нижче: */
+/*
+.hero-disclaimer-inner {
+    border-top: 1.5px solid #003399;
+    border-bottom: 1.5px solid #003399;
+}
+*/
 .hero-logos img {
     width: 200px;
     max-width: 100%; /* Головне правило адаптивності: картинка ніколи не буде ширшою за екран */
